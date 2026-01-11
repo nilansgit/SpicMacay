@@ -1,0 +1,109 @@
+/* Use a classical serif font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+.navbar {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navbar-logo img {
+  height: 18vh;
+  width: auto;
+}
+
+
+/* Desktop Links */
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.navbar-links a {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+/* subtle hover effect */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 16px 32px;
+}
+
+.mobile-menu a {
+  padding: 12px 0;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}

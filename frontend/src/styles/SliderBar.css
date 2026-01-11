@@ -1,0 +1,51 @@
+.supporters-strip {
+  width: 100%;
+  padding-top: 5x;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.supporters-heading {
+  width: clamp(200px, 30vw, 380px);
+  margin-bottom: 50px;
+}
+
+/* viewport */
+.supporters-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* moving container */
+.supporters-track {
+  display: flex;
+  width: 200%; /* 🔑 VERY IMPORTANT */
+  animation: scroll 25s linear infinite;
+}
+
+/* each half */
+.logo-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  width: 75%; /* 🔑 EXACTLY half */
+}
+
+/* logos */
+.logo-set img {
+  height: clamp(60px, 6vw, 90px);
+  height: 150px;
+  flex-shrink: 0;
+  opacity: 1;
+}
+
+/* seamless animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

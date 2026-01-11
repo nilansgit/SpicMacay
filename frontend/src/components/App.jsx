@@ -1,9 +1,23 @@
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import '../styles/App.css';
+import Landing from './Landing.jsx';
+
+function AppContent() {
+
   return (
-    <div>
-      <h1>Hello SPICMACAY-NITK</h1>
+    <div className="app">
+      <Landing/>
     </div>
-  )     
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;
