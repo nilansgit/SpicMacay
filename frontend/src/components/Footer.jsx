@@ -11,6 +11,7 @@ function Footer() {
         <br />
         <br />
         <br />
+        <br />
       </div>
       <div className="footer-top">
         <div className="footer-block">

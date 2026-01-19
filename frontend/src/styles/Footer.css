@@ -2,7 +2,7 @@
   width: 100%;
   color: #3a2a17;
   font-family: "Georgia", serif;
-  margin-bottom: -2%;
+  margin-bottom: -1%;
   padding: 0;
 }
 
@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 80px 2vw 14vw;
+  padding: 8rem 2vw 14vw;
 }
 
 .footer-block h3,
