@@ -4,25 +4,15 @@ import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
       <div className="footer-top">
         <div className="footer-block">
           <h4>Links</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/virasat">Virasat</a></li>
+            <li><a href="/aradhana">Aradhana</a></li>
+            <li><a href="/artists">Artists</a></li>
+            <li><a href="/teams">Team</a></li>
           </ul>
         </div>
 
@@ -45,7 +35,8 @@ function Footer() {
           </p>
         </div>
       </div>
-
+      <br />
+      <br />
       <div className="footer-bottom">
         <div className="socials">
           <a href="https://www.instagram.com/spicmacaymangalore/?hl=en"
@@ -67,7 +58,7 @@ function Footer() {
         </div>
 
         <p>
-          Designed & Developed with <span>♥</span> by Team SPICMACAY NITK.
+          Designed & Developed with <span>♥</span> by Team Spicmacay-NITK.
         </p>
       </div>
     </footer>

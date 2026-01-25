@@ -1,5 +1,5 @@
 .footer {
-  width: 100%;
+  width: 85%;
   color: #3a2a17;
   font-family: "Georgia", serif;
   margin-bottom: -1%;
@@ -10,8 +10,7 @@
 .footer-top {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 8rem 2vw 14vw;
+  padding: 10rem 2vw 6vw;
 }
 
 .footer-block h3,
@@ -46,7 +45,7 @@
 /* BOTTOM STRIP */
 .footer-bottom {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 25px 1vw;
+  padding: 1rem 1vw 1rem 1vw;
 }
 
 .socials {

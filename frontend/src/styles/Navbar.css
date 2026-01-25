@@ -1,5 +1,5 @@
 /* Use a classical serif font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
 .navbar {
   width: 100%;
@@ -32,16 +32,18 @@
 /* Desktop Links */
 .navbar-links {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   font-weight: 500;
   font-size: xx-large;
 }
 
 .navbar-links a {
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
+  font-family: "Macondo", cursive;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: #000;
+  color: #894F11;
   position: relative;
 }
 

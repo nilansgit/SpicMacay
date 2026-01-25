@@ -28,14 +28,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: auto;
+  height: 100%;
   width: 75%; /* 🔑 EXACTLY half */
 }
 
 /* logos */
 .logo-set img {
-  height: clamp(60px, 6vw, 90px);
-  height: 150px;
+  height: clamp(10px, 6vw, 90px);
   flex-shrink: 0;
   opacity: 1;
 }

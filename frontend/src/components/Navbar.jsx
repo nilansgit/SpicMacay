@@ -1,6 +1,7 @@
 import { useState } from "react";
+import {Link} from 'react-router-dom'
 import "../styles/Navbar.css";
-import logo from "../assets/images/WebsiteLogo.webp";
+import logo from "../assets/images/WebsiteLogo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,12 +17,12 @@ function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="navbar-links">
-          <a href="#home">Home</a>
-          <a href="#events">Events</a>
-          <a href="#artists">Artists</a>
-          <a href="#team">Team</a>
-          <a href="#faqs">FAQs</a>
-          <a href="#contact">Contact us</a>
+          <Link to="/">Home</Link>
+          <Link to="/teams">Team</Link>
+          <Link to="/artists">Artists</Link>
+          {/* <Link to="#team">Contact Us</Link> */}
+          <Link to="/virasat" className=" py-1.5 rounded-full bg-[#8b2c0f] hover:bg-[#6f210c] transition !text-white "> &nbsp;&nbsp;Virasat&nbsp;&nbsp;</Link>
+          <Link to="/aradhana" className=" py-1.5 rounded-full bg-[#8b2c0f] hover:bg-[#6f210c] transition !text-white "> &nbsp;&nbsp;Aradhana&nbsp;&nbsp;</Link>
         </nav>
 
         {/* Hamburger */}
@@ -37,12 +38,12 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
-        <a onClick={() => setMenuOpen(false)} href="#home">Home</a>
-        <a onClick={() => setMenuOpen(false)} href="#events">Events</a>
-        <a onClick={() => setMenuOpen(false)} href="#artists">Artists</a>
-        <a onClick={() => setMenuOpen(false)} href="#team">Team</a>
-        <a onClick={() => setMenuOpen(false)} href="#faqs">FAQs</a>
-        <a onClick={() => setMenuOpen(false)} href="#contact">Contact us</a>
+        <Link onClick={() => setMenuOpen(false)} to="#home">Home</Link>
+        <Link onClick={() => setMenuOpen(false)} to="#events">Events</Link>
+        <Link onClick={() => setMenuOpen(false)} to="#artists">Artists</Link>
+        <Link onClick={() => setMenuOpen(false)} to="#team">Team</Link>
+        <Link onClick={() => setMenuOpen(false)} to="#faqs">FAQs</Link>
+        <Link onClick={() => setMenuOpen(false)} to="#contact">Contact us</Link>
       </div>
       
     </header>

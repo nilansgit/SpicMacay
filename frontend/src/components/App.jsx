@@ -1,22 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import '../styles/App.css';
 import Landing from './Landing.jsx';
+import MainLayout from './MainLayout.jsx';
+import Virasat from './Virasat.jsx';
+import Aradhana from './Aradhana.jsx';
+import Team from './Team.jsx';
+import Artists from './Artists.jsx';
 
-function AppContent() {
-
-  return (
-    <div className="app">
-      <Landing/>
-    </div>
-  );
-}
 
 function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path = '/' element = {<Landing/>}/>
+        <Route path = '/virasat' element = {<Virasat/>}/>
+        <Route path = '/aradhana' element = {<Aradhana/>}/>
+        <Route path = '/teams' element = {<Team/>}/>
+        <Route path = '/artists' element = {<Artists/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

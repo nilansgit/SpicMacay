@@ -1,0 +1,50 @@
+.section {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.bg-img1 {
+  position: absolute;
+  object-fit: cover;
+}
+
+/* CONTENT LAYER */
+.content-layer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0%;
+}
+
+/* HERO SECTION SPACING */
+.section-hero .content-layer {
+  /* gap: 5rem; */
+  margin-bottom: 0px;
+}
+
+/* FOOTER */
+.section-footer {
+  min-height: 60vh;
+}
+
+.footer-content {
+  justify-content: flex-end;
+}
+
+
+.slidebar {
+  margin-bottom: 0%;
+}
