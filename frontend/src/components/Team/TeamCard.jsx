@@ -17,17 +17,18 @@ export default function TeamCard({ member }) {
           shadow-[0_10px_25px_rgba(0,0,0,0.35)]
           rounded-bl-xl rounded-br-xl
           !justify-items-center
+          !justify-center
 
         "
       >
-        <p className="text-2xl font-semibold">{member.name}</p>
-        <p className=" text-xl opacity-90 italic">{member.role}</p>
-        <div className= "text-md opacity-70 mt-1">
+        <p className="text-xl font-semibold">{member.name}</p>
+        <p className=" opacity-90 italic">{member.role}</p>
+        {/* <div className= "text-md opacity-70 mt-1">
           <a href="https://in.linkedin.com/company/spicmacay-mangalore"
             target="_blank"
             rel="noopener noreferrer"
           ><FaLinkedin/></a>
-        </div>
+        </div> */}
       </div>  
     </div>
   );

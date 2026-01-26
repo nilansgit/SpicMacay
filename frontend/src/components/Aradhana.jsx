@@ -1,6 +1,5 @@
-import React from 'react'
+import Page from './competition/Page'
 import MainLayout from './MainLayout'
-import Cards from './Cards'
 import Navbar from './Navbar'
 import WIP from './WIP'
 
@@ -8,7 +7,8 @@ export default function Aradhana() {
   return (
     <MainLayout>
       <Navbar/>
-      <WIP/>
+      <Page/>
+      {/* <WIP/> */}
     </MainLayout>
   )
 }

@@ -1,9 +1,9 @@
 const TABS = [
   { key: "core", label: "Core" },
-  { key: "4th", label: "4th Year" },
-  { key: "3rd", label: "3rd Year" },
-  { key: "2nd", label: "2nd Year" },
-  { key: "1st", label: "1st Year" },
+  // { key: "4th", label: "4th Year" },
+  // { key: "3rd", label: "3rd Year" },
+  // { key: "2nd", label: "2nd Year" },
+  // { key: "1st", label: "1st Year" },
 ];
 
 export default function TeamTabs({ active, setActive }) {
